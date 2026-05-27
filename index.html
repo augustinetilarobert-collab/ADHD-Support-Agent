@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADHD Support Agent | Expert-Guided Cognitive Support</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- HEADER -->
+        <header class="header">
+
+            <div class="logo">
+                <div class="logo-icon">🧠</div>
+                <h1>ADHD Support Agent</h1>
+            </div>
+
+            <p class="subtitle">
+                Expert-Guided ADHD Task Management & Cognitive Support
+            </p>
+
+        </header>
+
+        <!-- MAIN -->
+        <main class="main-content">
+
+            <!-- INPUT CARD -->
+            <div class="input-card glass-card">
+
+                <div class="input-group">
+
+                    <label for="userInput">
+                        What challenge are you facing right now?
+                    </label>
+
+                    <textarea id="userInput" rows="4"
+                        placeholder="Example: I have 3 assignments due tomorrow and I feel overwhelmed and exhausted..."></textarea>
+
+                    <button id="analyzeBtn" class="analyze-btn">
+
+                        <span class="btn-text">
+                            Analyze & Support
+                        </span>
+
+                        <span class="btn-icon">
+                            ✨
+                        </span>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+            <!-- LOADING -->
+            <div id="loading" class="loading hidden">
+
+                <div class="spinner"></div>
+
+                <p>
+                    AI Agent is analyzing your situation...
+                </p>
+
+            </div>
+
+            <!-- STRESS INDICATOR -->
+            <div id="stressIndicator" class="stress-indicator hidden">
+
+                <div class="stress-bar">
+
+                    <div id="stressFill" class="stress-fill"></div>
+
+                </div>
+
+                <span id="stressLabel">
+                    Stress Level: Calculating...
+                </span>
+
+            </div>
+
+            <!-- OUTPUT -->
+            <div id="outputContainer" class="output-container hidden"></div>
+
+        </main>
+
+        <!-- FOOTER -->
+        <footer class="footer">
+
+            <p>
+                Designed using Human Expert Knowledge & Agentic AI Principles
+            </p>
+
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
